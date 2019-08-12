@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:shell_style_drag_n_drop"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid PreviewMouseLeftButtonDown="Grid_PreviewMouseLeftButtonDown" PreviewMouseMove="Grid_PreviewMouseMove">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Height="100" Width="100" Text="Drag Me" Background="Red" />
+        </StackPanel>
     </Grid>
 </Window>
